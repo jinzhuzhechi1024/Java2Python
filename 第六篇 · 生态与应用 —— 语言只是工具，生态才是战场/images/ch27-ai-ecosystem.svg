@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">AI生态：Python垄断 vs Java空白</text>
+
+  <rect x="30" y="55" width="520" height="80" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="8"/>
+  <text x="290" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4CAF50">Python AI生态层</text>
+  <rect x="50" y="95" width="100" height="28" fill="#4CAF50" rx="4"/>
+  <text x="100" y="113" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">PyTorch</text>
+  <rect x="165" y="95" width="100" height="28" fill="#4CAF50" rx="4"/>
+  <text x="215" y="113" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">TensorFlow</text>
+  <rect x="280" y="95" width="100" height="28" fill="#4CAF50" rx="4"/>
+  <text x="330" y="113" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">langchain</text>
+  <rect x="395" y="95" width="100" height="28" fill="#4CAF50" rx="4"/>
+  <text x="445" y="113" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">transformers</text>
+
+  <rect x="30" y="150" width="520" height="60" fill="#E3F2FD" stroke="#3776AB" stroke-width="2" rx="8"/>
+  <text x="290" y="175" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">Python 数据科学层</text>
+  <rect x="80" y="185" width="90" height="20" fill="#3776AB" rx="4"/>
+  <text x="125" y="199" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">Pandas</text>
+  <rect x="190" y="185" width="80" height="20" fill="#3776AB" rx="4"/>
+  <text x="230" y="199" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">NumPy</text>
+  <rect x="290" y="185" width="90" height="20" fill="#3776AB" rx="4"/>
+  <text x="335" y="199" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">scikit-learn</text>
+  <rect x="400" y="185" width="90" height="20" fill="#3776AB" rx="4"/>
+  <text x="445" y="199" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">Jupyter</text>
+
+  <rect x="30" y="225" width="520" height="50" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="8"/>
+  <text x="290" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java AI生态层</text>
+  <rect x="100" y="258" width="120" height="20" fill="#FF9800" rx="4"/>
+  <text x="160" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">DL4J (小众)</text>
+  <rect x="240" y="258" width="140" height="20" fill="#FF9800" rx="4"/>
+  <text x="310" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">Spring AI (刚起步)</text>
+  <text x="420" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">← 差距巨大</text>
+
+  <rect x="30" y="295" width="520" height="80" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="8"/>
+  <text x="290" y="320" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">核心结论</text>
+  <text x="290" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">LLM应用开发(langchain/transformers)几乎只能用Python</text>
+  <text x="290" y="358" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">学Python不是"多学一门语言"，而是"打开AI时代的大门"</text>
+</svg>

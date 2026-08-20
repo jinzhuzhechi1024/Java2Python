@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">类型系统：安检门 vs 自愿安检</text>
+  <line x1="290" y1="48" x2="290" y2="360" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="130" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#E76F00">Java 静态类型</text>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#3776AB">Python 动态类型</text>
+
+  <rect x="30" y="80" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="103" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">编译期强制类型检查</text>
+  <rect x="350" y="80" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="103" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">运行时动态类型</text>
+  <line x1="230" y1="98" x2="350" y2="98" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="126" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="149" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">int x = 42（类型绑变量）</text>
+  <rect x="350" y="126" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="149" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">x = 42（类型绑值）</text>
+  <line x1="230" y1="144" x2="350" y2="144" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="172" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">8种原生类型 + 对象</text>
+  <rect x="350" y="172" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">万物皆对象（int也是对象）</text>
+  <line x1="230" y1="190" x2="350" y2="190" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="218" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="241" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">var(Java10+) 类型推断</text>
+  <rect x="350" y="218" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="241" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">Type Hints（可选注解）</text>
+  <line x1="230" y1="236" x2="350" y2="236" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="264" width="200" height="36" fill="#FFE0B2" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="130" y="287" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#E65100" font-weight="bold">编译期拦截类型错误</text>
+  <rect x="350" y="264" width="200" height="36" fill="#BBDEFB" stroke="#3776AB" stroke-width="2" rx="6"/>
+  <text x="450" y="287" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0D47A1" font-weight="bold">mypy可选静态检查</text>
+  <line x1="230" y1="282" x2="350" y2="282" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="320" width="520" height="50" fill="#F5F5F5" stroke="#999" stroke-width="1.5" rx="6"/>
+  <text x="290" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">Java: 类型是安检门——不过安检不让上飞机（编译报错）</text>
+  <text x="290" y="358" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">Python: 类型是自愿安检——你可以走安检(mypy)，也可以不走</text>
+</svg>

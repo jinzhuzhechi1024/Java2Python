@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Web框架：重装骑士(Spring) vs 轻量刺客(FastAPI)</text>
+  <line x1="290" y1="48" x2="290" y2="360" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="280" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Spring Boot（重装骑士）</text>
+  <text x="150" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24">🛡️</text>
+  <text x="150" y="145" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">盔甲：DI/AOP/Security/Actuator</text>
+  <text x="150" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">武器：JPA/JDBC/事务管理</text>
+  <text x="150" y="185" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">盾牌：@Autowired隐式注入</text>
+  <text x="150" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">启动: 3-10s（穿盔甲慢）</text>
+  <text x="150" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">内存: 250-400MB</text>
+  <text x="150" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">最小代码: 20行+配置</text>
+  <text x="150" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">企业级特性成熟</text>
+  <text x="150" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">生态完善(Spring全家桶)</text>
+  <text x="150" y="325" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">大型企业后端首选</text>
+
+  <rect x="310" y="60" width="240" height="280" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">FastAPI（轻量刺客）</text>
+  <text x="430" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24">⚔️</text>
+  <text x="430" y="145" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">刀：路由 @app.get</text>
+  <text x="430" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">盾：Depends显式注入</text>
+  <text x="430" y="185" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">速：asyncio异步IO</text>
+  <text x="430" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">启动: 0.1s（拔刀即战）</text>
+  <text x="430" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">内存: 30-50MB</text>
+  <text x="430" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">最小代码: 5行</text>
+  <text x="430" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">企业级特性需自行组装</text>
+  <text x="430" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">自动API文档(0配置)</text>
+  <text x="430" y="325" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">微服务/Serverless首选</text>
+</svg>

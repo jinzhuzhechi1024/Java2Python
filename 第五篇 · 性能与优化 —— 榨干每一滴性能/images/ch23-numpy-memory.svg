@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">内存布局：指针跳跃 vs 连续内存</text>
+  <line x1="290" y1="48" x2="290" y2="340" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="260" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Python list（指针数组）</text>
+  <rect x="55" y="100" width="190" height="30" fill="#FFE0B2" stroke="#E76F00" rx="4"/>
+  <text x="62" y="120" font-family="monospace" font-size="9" fill="#333">[ptr, ptr, ptr, ptr]</text>
+  <text x="150" y="145" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#999">↓ ↓ ↓ ↓</text>
+  <rect x="60" y="160" width="35" height="20" fill="#FF9800" rx="3"/>
+  <text x="77" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">42</text>
+  <rect x="105" y="155" width="35" height="25" fill="#9C27B0" rx="3"/>
+  <text x="122" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">99</text>
+  <rect x="155" y="165" width="30" height="15" fill="#00BCD4" rx="3"/>
+  <text x="170" y="176" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">7</text>
+  <rect x="200" y="150" width="40" height="30" fill="#795548" rx="3"/>
+  <text x="220" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">123</text>
+  <text x="150" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">每个元素大小不一</text>
+  <text x="150" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">内存不连续→缓存不友好</text>
+  <text x="150" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">每次访问要跳到堆上找对象</text>
+  <text x="150" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#D32F2F">100万平方: 45ms</text>
+  <text x="150" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像跳棋子：东一个西一个</text>
+
+  <rect x="310" y="60" width="240" height="260" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">NumPy array（连续内存）</text>
+  <rect x="335" y="100" width="190" height="30" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="430" y="120" text-anchor="middle" font-family="monospace" font-size="9" fill="#0D47A1">[42, 99, 7, 123] 连续排列</text>
+  <rect x="345" y="155" width="40" height="25" fill="#3776AB" rx="3"/>
+  <text x="365" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">42</text>
+  <rect x="390" y="155" width="40" height="25" fill="#3776AB" rx="3"/>
+  <text x="410" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">99</text>
+  <rect x="435" y="155" width="40" height="25" fill="#3776AB" rx="3"/>
+  <text x="455" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">7</text>
+  <rect x="480" y="155" width="40" height="25" fill="#3776AB" rx="3"/>
+  <text x="500" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#fff">123</text>
+  <text x="430" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">所有元素同等大小</text>
+  <text x="430" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">内存连续→CPU缓存命中率高</text>
+  <text x="430" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">SIMD指令批量运算</text>
+  <text x="430" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4CAF50">100万平方: 0.3ms</text>
+  <text x="430" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像排队走：整齐划一</text>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">GIL：单车道收费站</text>
+
+  <rect x="50" y="60" width="480" height="60" fill="#FFF3E0" stroke="#E76F00" stroke-width="2" rx="8"/>
+  <text x="290" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java 多车道高速（多线程真并行）</text>
+  <rect x="80" y="95" width="80" height="18" fill="#4CAF50" rx="3"/>
+  <text x="120" y="108" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">Thread1</text>
+  <rect x="170" y="95" width="80" height="18" fill="#4CAF50" rx="3"/>
+  <text x="210" y="108" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">Thread2</text>
+  <rect x="260" y="95" width="80" height="18" fill="#4CAF50" rx="3"/>
+  <text x="300" y="108" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">Thread3</text>
+  <rect x="350" y="95" width="80" height="18" fill="#4CAF50" rx="3"/>
+  <text x="390" y="108" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">Thread4</text>
+  <text x="455" y="108" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">→ 4x加速</text>
+
+  <rect x="50" y="140" width="480" height="100" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2" rx="8"/>
+  <text x="290" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#D32F2F">Python 单车道收费站（GIL）</text>
+  <rect x="260" y="180" width="60" height="40" fill="#D32F2F" rx="4"/>
+  <text x="290" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff" font-weight="bold">GIL</text>
+  <rect x="80" y="188" width="60" height="24" fill="#FF9800" rx="3"/>
+  <text x="110" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">T1</text>
+  <rect x="150" y="188" width="60" height="24" fill="#9C27B0" rx="3"/>
+  <text x="180" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">T2</text>
+  <rect x="370" y="188" width="60" height="24" fill="#00BCD4" rx="3"/>
+  <text x="400" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">T3</text>
+  <rect x="440" y="188" width="60" height="24" fill="#795548" rx="3"/>
+  <text x="470" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">T4</text>
+  <text x="290" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#D32F2F">同一时刻只有1个线程过站执行字节码</text>
+
+  <rect x="50" y="260" width="230" height="80" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="165" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="bold" fill="#3776AB">IO密集型 ✅</text>
+  <text x="165" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#555">线程等IO时GIL释放</text>
+  <text x="165" y="322" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#555">其他线程可过站→有效</text>
+
+  <rect x="300" y="260" width="230" height="80" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="415" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">CPU密集型 ❌</text>
+  <text x="415" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#555">无IO释放GIL→争抢开销</text>
+  <text x="415" y="322" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#555">多线程比单线程更慢!</text>
+
+  <text x="290" y="370" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">CPU密集→用multiprocessing绕过GIL | IO海量→用asyncio协程</text>
+</svg>

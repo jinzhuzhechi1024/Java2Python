@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">异常风格：三思后行(LBYL) vs 请求原谅(EAFP)</text>
+  <line x1="290" y1="48" x2="290" y2="340" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="260" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">LBYL (Java风格)</text>
+  <text x="150" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">Look Before You Leap</text>
+  <text x="150" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">三思而后行</text>
+  <rect x="50" y="140" width="200" height="60" fill="#FFE0B2" stroke="#E76F00" rx="4"/>
+  <text x="150" y="160" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">if (map.containsKey(k))</text>
+  <text x="150" y="176" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">  return map.get(k);</text>
+  <text x="150" y="192" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">else return default;</text>
+  <text x="150" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">⚠️ 检查+执行 = 两次操作</text>
+  <text x="150" y="245" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">⚠️ 两条代码路径(if/else)</text>
+  <text x="150" y="270" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像过马路：先看左右再走</text>
+  <text x="150" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">安全但啰嗦</text>
+
+  <rect x="310" y="60" width="240" height="260" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">EAFP (Python风格)</text>
+  <text x="430" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">Easier to Ask Forgiveness</text>
+  <text x="430" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">请求原谅比许可容易</text>
+  <rect x="330" y="140" width="200" height="60" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="430" y="160" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">try:</text>
+  <text x="430" y="176" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">  return map[k]</text>
+  <text x="430" y="192" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">except KeyError: ...</text>
+  <text x="430" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 直接执行，一条路径</text>
+  <text x="430" y="245" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 正常路径零开销</text>
+  <text x="430" y="270" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像先冲过去，撞了再说</text>
+  <text x="430" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">简洁且高效</text>
+</svg>

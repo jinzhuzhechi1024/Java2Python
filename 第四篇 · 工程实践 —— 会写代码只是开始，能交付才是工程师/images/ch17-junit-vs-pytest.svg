@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">测试风格：公文(JUnit) vs 便签(pytest)</text>
+  <line x1="290" y1="48" x2="290" y2="340" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="260" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">JUnit（公文风）</text>
+  <rect x="50" y="100" width="200" height="120" fill="#FFE0B2" stroke="#E76F00" rx="4"/>
+  <text x="55" y="118" font-family="monospace" font-size="9" fill="#333">@ExtendWith(Mockito.class)</text>
+  <text x="55" y="133" font-family="monospace" font-size="9" fill="#333">class UserTest {</text>
+  <text x="55" y="148" font-family="monospace" font-size="9" fill="#333">  @Mock UserRepo repo;</text>
+  <text x="55" y="163" font-family="monospace" font-size="9" fill="#333">  @BeforeEach void setup()</text>
+  <text x="55" y="178" font-family="monospace" font-size="9" fill="#333">  @Test void shouldFind()</text>
+  <text x="55" y="193" font-family="monospace" font-size="9" fill="#333">    assertEquals("Alice",..)</text>
+  <text x="55" y="208" font-family="monospace" font-size="9" fill="#333">}</text>
+  <text x="150" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">需要: @Test @BeforeEach @Mock</text>
+  <text x="150" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">需要: class + 方法</text>
+  <text x="150" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">需要: assertEquals/assertNull</text>
+  <text x="150" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">启动: JVM 3-10s</text>
+
+  <rect x="310" y="60" width="240" height="260" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">pytest（便签风）</text>
+  <rect x="330" y="100" width="200" height="80" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="335" y="118" font-family="monospace" font-size="9" fill="#333">def test_find_user(mock_repo):</text>
+  <text x="335" y="133" font-family="monospace" font-size="9" fill="#333">    mock_repo.find.return_value</text>
+  <text x="335" y="148" font-family="monospace" font-size="9" fill="#333">        = User("Alice")</text>
+  <text x="335" y="163" font-family="monospace" font-size="9" fill="#333">    assert svc.find(1).name</text>
+  <text x="335" y="178" font-family="monospace" font-size="9" fill="#333">        == "Alice"</text>
+  <text x="430" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">函数以test_开头即可</text>
+  <text x="430" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">fixture自动注入参数</text>
+  <text x="430" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">assert一行搞定</text>
+  <text x="430" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">启动: 0.1s（无JVM）</text>
+  <text x="430" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50" font-weight="bold">代码量少70%</text>
+</svg>

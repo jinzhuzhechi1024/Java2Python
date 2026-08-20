@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">asyncio：超级服务员 vs 普通服务员</text>
+
+  <rect x="30" y="55" width="250" height="310" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="155" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java 线程池（100个服务员）</text>
+  <circle cx="80" cy="120" r="15" fill="#FF9800"/>
+  <text x="80" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">W1</text>
+  <circle cx="130" cy="120" r="15" fill="#FF9800"/>
+  <text x="130" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">W2</text>
+  <circle cx="180" cy="120" r="15" fill="#FF9800"/>
+  <text x="180" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">W3</text>
+  <circle cx="230" cy="120" r="15" fill="#FF9800"/>
+  <text x="230" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fff">W4</text>
+  <text x="155" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">每个服务员管1桌</text>
+  <text x="155" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">客人发呆→服务员也发呆</text>
+  <text x="155" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">10万并发→100GB内存</text>
+  <text x="155" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">每服务员1MB栈</text>
+  <text x="155" y="265" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">通用：CPU+IO都能干</text>
+  <text x="155" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">创建/切换成本高</text>
+  <text x="155" y="320" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像百货公司导购</text>
+  <text x="155" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">一人盯一客</text>
+
+  <rect x="300" y="55" width="250" height="310" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="425" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">asyncio（1个超级服务员）</text>
+  <circle cx="425" cy="120" r="22" fill="#3776AB"/>
+  <text x="425" y="126" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff" font-weight="bold">SUPER</text>
+  <text x="425" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">1个服务员管1000桌</text>
+  <text x="425" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">客人发呆→去下一桌</text>
+  <text x="425" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">10万并发→200MB内存</text>
+  <text x="425" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">每协程仅2KB</text>
+  <text x="425" y="265" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">CPU密集会阻塞→用线程池</text>
+  <text x="425" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">创建/切换成本极低</text>
+  <text x="425" y="320" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像米其林服务员</text>
+  <text x="425" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">一人统筹全场</text>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">OOP模型：西装宴 vs 自助Party</text>
+  <line x1="290" y1="48" x2="290" y2="350" stroke="#CCC" stroke-dasharray="5,3"/>
+  <text x="130" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#E76F00">Java OOP</text>
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#3776AB">Python OOP</text>
+
+  <rect x="30" y="80" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="103" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">单继承+接口（严谨）</text>
+  <rect x="350" y="80" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="103" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">多重继承+MRO（灵活）</text>
+  <line x1="230" y1="98" x2="350" y2="98" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="126" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="149" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">private/protected/public</text>
+  <rect x="350" y="126" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="149" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">_约定 / __名称改写</text>
+  <line x1="230" y1="144" x2="350" y2="144" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="172" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">getter/setter方法</text>
+  <rect x="350" y="172" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">@property装饰器</text>
+  <line x1="230" y1="190" x2="350" y2="190" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="218" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="241" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">构造函数重载</text>
+  <rect x="350" y="218" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="241" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">__init__ + 默认参数</text>
+  <line x1="230" y1="236" x2="350" y2="236" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="264" width="200" height="36" fill="#FFE0B2" stroke="#E76F00" stroke-width="2" rx="6"/>
+  <text x="130" y="287" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#E65100" font-weight="bold">编译期严格检查</text>
+  <rect x="350" y="264" width="200" height="36" fill="#BBDEFB" stroke="#3776AB" stroke-width="2" rx="6"/>
+  <text x="450" y="287" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0D47A1" font-weight="bold">运行时动态，约定优先</text>
+  <line x1="230" y1="282" x2="350" y2="282" stroke="#666" stroke-width="1.5"/>
+
+  <rect x="30" y="310" width="520" height="60" fill="#F5F5F5" stroke="#999" stroke-width="1.5" rx="6"/>
+  <text x="290" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">Java OOP像西装宴——着装要求严格(private/public)，座位固定(单继承)</text>
+  <text x="290" y="348" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">Python OOP像自助Party——着装随意(_约定)，自由组合(多重继承)，靠礼仪(PEP)维持秩序</text>
+</svg>

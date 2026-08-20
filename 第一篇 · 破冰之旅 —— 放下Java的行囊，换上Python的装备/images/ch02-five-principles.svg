@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+
+  <!-- 标题 -->
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Python 之禅五原则 vs Java 五原则</text>
+
+  <!-- 原则1 -->
+  <rect x="30" y="50" width="520" height="55" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="50" y="72" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">1. 美胜于丑（Beautiful is better than ugly）</text>
+  <text x="50" y="92" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: 列表推导 [x*2 for x in items]  vs  Java: for循环+ArrayList.add() 5行</text>
+
+  <!-- 原则2 -->
+  <rect x="30" y="115" width="520" height="55" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="50" y="137" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">2. 显式胜于隐式（Explicit is better than implicit）</text>
+  <text x="50" y="157" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: import pandas  vs  Java: @Autowired 隐式注入（魔法太多）</text>
+
+  <!-- 原则3 -->
+  <rect x="30" y="180" width="520" height="55" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="50" y="202" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">3. 简单胜于复杂（Simple is better than complex）</text>
+  <text x="50" y="222" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: 一种方式做一件事  vs  Java: 接口+抽象类+实现类+工厂4层</text>
+
+  <!-- 原则4 -->
+  <rect x="30" y="245" width="520" height="55" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="50" y="267" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">4. 可读性很重要（Readability counts）</text>
+  <text x="50" y="287" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: 缩进即语法，代码像散文  vs  Java: 花括号嵌套深，Lombok注解满天飞</text>
+
+  <!-- 原则5 -->
+  <rect x="30" y="310" width="520" height="55" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="50" y="332" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">5. 如果实现难以解释，那它可能不是好主意</text>
+  <text x="50" y="352" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: 标准库够用就不引框架  vs  Java: 一个CRUD引入Spring全家桶</text>
+
+  <!-- 底部提示 -->
+  <text x="290" y="385" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#999">完整版见：python -c "import this"</text>
+</svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="420" fill="#FAFAFA" rx="8"/>
+
+  <!-- 标题 -->
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Java vs Python 设计哲学对比</text>
+
+  <!-- 分割线 -->
+  <line x1="290" y1="48" x2="290" y2="380" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <!-- 左侧 Java 标题 -->
+  <text x="130" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#E76F00">Java 哲学</text>
+
+  <!-- 右侧 Python 标题 -->
+  <text x="450" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#3776AB">Python 哲学</text>
+
+  <!-- 对比1: 类型系统 -->
+  <rect x="30" y="80" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="103" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">静态类型（编译期安检）</text>
+
+  <rect x="350" y="80" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="103" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">动态类型（运行时自愿安检）</text>
+
+  <line x1="230" y1="98" x2="350" y2="98" stroke="#666" stroke-width="1.5"/>
+  <text x="290" y="94" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">对比1</text>
+
+  <!-- 对比2: 执行方式 -->
+  <rect x="30" y="126" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="149" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">编译→JVM字节码→JIT</text>
+
+  <rect x="350" y="126" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="149" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">解释执行（CPython字节码）</text>
+
+  <line x1="230" y1="144" x2="350" y2="144" stroke="#666" stroke-width="1.5"/>
+  <text x="290" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">对比2</text>
+
+  <!-- 对比3: OOP模型 -->
+  <rect x="30" y="172" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">单继承+接口（显式implements）</text>
+
+  <rect x="350" y="172" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">多重继承+鸭子类型（隐式）</text>
+
+  <line x1="230" y1="190" x2="350" y2="190" stroke="#666" stroke-width="1.5"/>
+  <text x="290" y="186" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">对比3 ⚠️</text>
+
+  <!-- 对比4: 工程化 -->
+  <rect x="30" y="218" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="241" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">框架驱动（Spring全家桶）</text>
+
+  <rect x="350" y="218" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="241" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">标准库+约定（乐高式组合）</text>
+
+  <line x1="230" y1="236" x2="350" y2="236" stroke="#666" stroke-width="1.5"/>
+  <text x="290" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">对比4 ⚠️</text>
+
+  <!-- 对比5: 并发模型 -->
+  <rect x="30" y="264" width="200" height="36" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="6"/>
+  <text x="130" y="287" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">多线程+synchronized/Lock</text>
+
+  <rect x="350" y="264" width="200" height="36" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="6"/>
+  <text x="450" y="287" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#333">GIL+asyncio/multiprocessing</text>
+
+  <line x1="230" y1="282" x2="350" y2="282" stroke="#666" stroke-width="1.5"/>
+  <text x="290" y="278" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">对比5 ⚠️</text>
+
+  <!-- 底部说明 -->
+  <rect x="30" y="320" width="520" height="50" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="290" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F" font-weight="bold">⚠️ 标记的三组对比是"形似神不似"的高危认知陷阱</text>
+  <text x="290" y="358" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">OOP / 工程化 / 并发——后续每篇深入展开</text>
+</svg>

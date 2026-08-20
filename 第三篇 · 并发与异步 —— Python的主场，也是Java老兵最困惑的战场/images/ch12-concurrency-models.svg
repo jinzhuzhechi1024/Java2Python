@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">Python并发三模型 vs Java线程模型</text>
+
+  <rect x="30" y="50" width="160" height="300" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="110" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java 线程</text>
+  <text x="110" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">1:1 OS线程</text>
+  <text x="110" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">1MB栈/线程</text>
+  <text x="110" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">synchronized</text>
+  <text x="110" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">CPU+IO都并行</text>
+  <text x="110" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">适合: 通用并发</text>
+
+  <rect x="210" y="50" width="160" height="300" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="290" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">threading</text>
+  <text x="290" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">1:1 OS线程</text>
+  <text x="290" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">受GIL限制</text>
+  <text x="290" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">CPU密集更慢!</text>
+  <text x="290" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">IO密集可用</text>
+  <text x="290" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">适合: IO阻塞任务</text>
+
+  <rect x="390" y="50" width="160" height="145" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="8"/>
+  <text x="470" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4CAF50">multiprocessing</text>
+  <text x="470" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">独立进程</text>
+  <text x="470" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">绕过GIL</text>
+  <text x="470" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">真正并行</text>
+  <text x="470" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">创建成本高</text>
+  <text x="470" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">适合: CPU密集</text>
+
+  <rect x="390" y="205" width="160" height="145" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5" rx="8"/>
+  <text x="470" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#9C27B0">asyncio</text>
+  <text x="470" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">单线程协程</text>
+  <text x="470" y="275" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">事件循环</text>
+  <text x="470" y="295" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">极轻量</text>
+  <text x="470" y="315" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">async/await</text>
+  <text x="470" y="335" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">适合: 高并发IO</text>
+</svg>

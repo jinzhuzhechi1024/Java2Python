@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">开发体验：写信(Java) vs 面对面聊天(Jupyter)</text>
+  <line x1="290" y1="48" x2="290" y2="360" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="290" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java IDE（写信）</text>
+  <rect x="50" y="100" width="200" height="30" fill="#FFE0B2" stroke="#E76F00" rx="4"/>
+  <text x="150" y="120" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">System.out.println(x)</text>
+  <text x="150" y="145" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#999">↓</text>
+  <rect x="50" y="155" width="200" height="20" fill="#FFF3E0" stroke="#E76F00" rx="3"/>
+  <text x="150" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#555">javac编译 (3s)</text>
+  <text x="150" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#999">↓</text>
+  <rect x="50" y="205" width="200" height="20" fill="#FFF3E0" stroke="#E76F00" rx="3"/>
+  <text x="150" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#555">java运行 (JVM 5s)</text>
+  <text x="150" y="245" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#999">↓</text>
+  <rect x="50" y="255" width="200" height="25" fill="#E8F5E9" stroke="#4CAF50" rx="3"/>
+  <text x="150" y="272" text-anchor="middle" font-family="monospace" font-size="10" fill="#2E7D32">输出: x = 42</text>
+  <text x="150" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">想看变量→加print→编译→运行</text>
+  <text x="150" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像写信：写完→寄出→等回信</text>
+
+  <rect x="310" y="60" width="240" height="290" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">Jupyter（面对面聊天）</text>
+  <rect x="330" y="100" width="200" height="25" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="430" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#0D47A1">In [1]: x = 42</text>
+  <rect x="330" y="130" width="200" height="20" fill="#E8F5E9" stroke="#4CAF50" rx="3"/>
+  <text x="430" y="145" text-anchor="middle" font-family="monospace" font-size="9" fill="#2E7D32">Out[1]: 42  ← 即时!</text>
+  <text x="430" y="175" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#999">↓</text>
+  <rect x="330" y="185" width="200" height="25" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="430" y="203" text-anchor="middle" font-family="monospace" font-size="9" fill="#0D47A1">In [2]: df.head()</text>
+  <rect x="330" y="215" width="200" height="35" fill="#E8F5E9" stroke="#4CAF50" rx="3"/>
+  <text x="430" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#2E7D32">Out[2]: 表格直接显示</text>
+  <text x="430" y="244" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#2E7D32">name | age | salary</text>
+  <text x="430" y="275" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#999">↓</text>
+  <rect x="330" y="285" width="200" height="25" fill="#F3E5F5" stroke="#9C27B0" rx="4"/>
+  <text x="430" y="303" text-anchor="middle" font-family="monospace" font-size="9" fill="#9C27B0">In [3]: df.plot.bar()</text>
+  <text x="430" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">图表直接显示在下方!</text>
+  <text x="430" y="345" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像聊天：说一句→回一句</text>
+</svg>

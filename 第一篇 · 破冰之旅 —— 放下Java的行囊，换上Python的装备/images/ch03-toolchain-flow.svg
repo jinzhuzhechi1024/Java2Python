@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="420" fill="#FAFAFA" rx="8"/>
+
+  <!-- 标题 -->
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">构建运行流程：Java vs Python</text>
+
+  <!-- Java 流程 -->
+  <text x="145" y="58" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#E76F00">Java 流程</text>
+
+  <rect x="30" y="70" width="230" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="145" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">1. pom.xml 声明依赖</text>
+
+  <rect x="30" y="108" width="230" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="145" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">2. mvn compile → .class 字节码</text>
+
+  <rect x="30" y="146" width="230" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="145" y="166" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">3. mvn package → .jar</text>
+
+  <rect x="30" y="184" width="230" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="145" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">4. java -jar app.jar</text>
+
+  <rect x="30" y="222" width="230" height="32" fill="#FFE0B2" stroke="#E76F00" stroke-width="2" rx="5"/>
+  <text x="145" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#E65100" font-weight="bold">5. JVM 启动+类加载 (3-45s)</text>
+
+  <rect x="30" y="260" width="230" height="32" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="5"/>
+  <text x="145" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">6. JIT 热优化（运行越久越快）</text>
+
+  <!-- 箭头 Java -->
+  <text x="145" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" fill="#E76F00">↓</text>
+  <text x="145" y="332" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#666" font-weight="bold">运行中</text>
+
+  <!-- Python 流程 -->
+  <text x="435" y="58" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="bold" fill="#3776AB">Python 流程</text>
+
+  <rect x="320" y="70" width="230" height="32" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="5"/>
+  <text x="435" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">1. requirements.txt / pyproject.toml</text>
+
+  <rect x="320" y="108" width="230" height="32" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="5"/>
+  <text x="435" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">2. pip install（无需编译）</text>
+
+  <rect x="320" y="146" width="230" height="32" fill="#BBDEFB" stroke="#3776AB" stroke-width="2" rx="5"/>
+  <text x="435" y="166" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#0D47A1" font-weight="bold">3. python main.py（直接运行）</text>
+
+  <rect x="320" y="184" width="230" height="32" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="5"/>
+  <text x="435" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">4. CPython 解释器逐行执行</text>
+
+  <rect x="320" y="222" width="230" height="32" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="5"/>
+  <text x="435" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">5. 无JIT（PyPy可选）</text>
+
+  <rect x="320" y="260" width="230" height="32" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="5"/>
+  <text x="435" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">6. 运行越久速度不变</text>
+
+  <!-- 箭头 Python -->
+  <text x="435" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" fill="#3776AB">↓</text>
+  <text x="435" y="332" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#666" font-weight="bold">运行中</text>
+
+  <!-- 对比总结 -->
+  <rect x="30" y="350" width="520" height="50" fill="#F5F5F5" stroke="#999" stroke-width="1.5" rx="6"/>
+  <text x="290" y="370" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">Java: 6步流程，编译+打包+JVM启动 → 首次运行慢，JIT热优化后快</text>
+  <text x="290" y="388" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">Python: 3步流程，安装+直接运行 → 启动快，但无JIT，纯循环慢</text>
+</svg>

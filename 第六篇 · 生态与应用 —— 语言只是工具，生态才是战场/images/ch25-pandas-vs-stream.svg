@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">数据处理：手工工具(Java) vs 数控机床(Pandas)</text>
+  <line x1="290" y1="48" x2="290" y2="340" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="260" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java Stream（手工工具）</text>
+  <rect x="50" y="100" width="200" height="90" fill="#FFE0B2" stroke="#E76F00" rx="4"/>
+  <text x="55" y="118" font-family="monospace" font-size="8" fill="#333">df.stream()</text>
+  <text x="55" y="133" font-family="monospace" font-size="8" fill="#333">  .filter(e-&gt;e.salary&gt;50k)</text>
+  <text x="55" y="148" font-family="monospace" font-size="8" fill="#333">  .collect(groupingBy(</text>
+  <text x="55" y="163" font-family="monospace" font-size="8" fill="#333">    Employee::dept,</text>
+  <text x="55" y="178" font-family="monospace" font-size="8" fill="#333">    averagingDouble))</text>
+  <text x="150" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">代码: 30行 + DTO类</text>
+  <text x="150" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">100万行: 5s</text>
+  <text x="150" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">内存: 2GB</text>
+  <text x="150" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">通用流处理，什么都能干</text>
+  <text x="150" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">但拆螺丝不如螺丝刀</text>
+
+  <rect x="310" y="60" width="240" height="260" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">Pandas（数控机床）</text>
+  <rect x="330" y="100" width="200" height="90" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="425" y="122" text-anchor="middle" font-family="monospace" font-size="10" fill="#0D47A1">df = pd.read_csv(f)</text>
+  <text x="425" y="142" text-anchor="middle" font-family="monospace" font-size="10" fill="#0D47A1">result = (df</text>
+  <text x="425" y="157" text-anchor="middle" font-family="monospace" font-size="9" fill="#0D47A1">  [df.salary&gt;50k]</text>
+  <text x="425" y="172" text-anchor="middle" font-family="monospace" font-size="9" fill="#0D47A1">  .groupby("dept").mean())</text>
+  <text x="430" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">代码: 3行</text>
+  <text x="430" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">100万行: 0.8s (6x快)</text>
+  <text x="430" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">内存: 800MB</text>
+  <text x="430" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">领域专用，数据处理极致优化</text>
+  <text x="430" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50" font-weight="bold">底层数控=NumPy C扩展</text>
+</svg>

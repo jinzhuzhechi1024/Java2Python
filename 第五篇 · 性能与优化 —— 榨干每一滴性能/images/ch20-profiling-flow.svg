@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">性能分析工作流：定位→分析→优化</text>
+
+  <rect x="30" y="55" width="160" height="80" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2" rx="8"/>
+  <text x="110" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#D32F2F">1. 定位</text>
+  <text x="110" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">cProfile</text>
+  <text x="110" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">找到热点函数</text>
+
+  <rect x="210" y="55" width="160" height="80" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="8"/>
+  <text x="290" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#FF9800">2. 分析</text>
+  <text x="290" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">line_profiler</text>
+  <text x="290" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">逐行耗时</text>
+
+  <rect x="390" y="55" width="160" height="80" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="8"/>
+  <text x="470" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4CAF50">3. 优化</text>
+  <text x="470" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">NumPy/Cython</text>
+  <text x="470" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#333">向量化/编译</text>
+
+  <text x="110" y="155" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#666">→</text>
+  <text x="290" y="155" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#666">→</text>
+
+  <rect x="30" y="175" width="520" height="190" fill="#F5F5F5" stroke="#999" stroke-width="1.5" rx="6"/>
+  <text x="50" y="200" font-family="system-ui,sans-serif" font-size="12" font-weight="bold" fill="#333">工具对比：</text>
+  <text x="50" y="220" font-family="system-ui,sans-serif" font-size="11" fill="#555">Java: JProfiler / async-profiler / JMH基准测试</text>
+  <text x="50" y="240" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: cProfile / line_profiler / py-spy火焰图</text>
+  <text x="50" y="265" font-family="system-ui,sans-serif" font-size="12" font-weight="bold" fill="#333">优化手段：</text>
+  <text x="50" y="285" font-family="system-ui,sans-serif" font-size="11" fill="#555">Java: JIT优化 / 并行流 / 堆外内存 / 对象池</text>
+  <text x="50" y="305" font-family="system-ui,sans-serif" font-size="11" fill="#555">Python: NumPy向量化 / Cython编译 / numba JIT / __slots__</text>
+  <text x="50" y="330" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F" font-weight="bold">核心差异：Java靠JVM自动优化，Python靠手动选择加速工具</text>
+</svg>

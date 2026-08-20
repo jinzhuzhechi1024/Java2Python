@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">作用域：花括号(西装) vs 缩进(和服)</text>
+  <line x1="290" y1="48" x2="290" y2="340" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="250" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java 花括号 = 西装纽扣</text>
+  <text x="150" y="110" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">if (x &gt; 0) {</text>
+  <text x="150" y="126" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">  doSomething();</text>
+  <text x="150" y="142" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">}</text>
+  <text x="150" y="175" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">✅ 纽扣扣不扣是你的自由</text>
+  <text x="150" y="193" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">缩进随意（但编译器不关心）</text>
+  <text x="150" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">⚠️ 可以写出可读性灾难：</text>
+  <text x="150" y="238" text-anchor="middle" font-family="monospace" font-size="9" fill="#D32F2F">if(x){if(y){for(){f();}}}</text>
+  <text x="150" y="265" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">格式靠自觉，工具辅助</text>
+  <text x="150" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">.Formatter / Checkstyle</text>
+
+  <rect x="310" y="60" width="240" height="250" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">Python 缩进 = 和服腰带</text>
+  <text x="430" y="110" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">if x &gt; 0:</text>
+  <text x="430" y="126" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">    do_something()</text>
+  <text x="430" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">✅ 腰带系不好就散架</text>
+  <text x="430" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#555">缩进是语法，不是美观</text>
+  <text x="430" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 不可能写出乱嵌套：</text>
+  <text x="430" y="223" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">缩进强制你分层展示</text>
+  <text x="430" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">格式即语法，强制一致</text>
+  <text x="430" y="268" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">PEP 8 = 社区统一规范</text>
+  <text x="430" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50" font-weight="bold">4空格 = 唯一正解</text>
+</svg>

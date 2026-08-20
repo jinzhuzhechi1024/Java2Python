@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="380" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">__slots__：省下40%内存的魔法</text>
+  <line x1="290" y1="48" x2="290" y2="330" stroke="#CCC" stroke-dasharray="5,3"/>
+
+  <rect x="30" y="60" width="240" height="250" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="8"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#D32F2F">无 __slots__（有__dict__）</text>
+  <rect x="55" y="100" width="190" height="150" fill="#FFCDD2" stroke="#D32F2F" rx="4"/>
+  <text x="150" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">User对象</text>
+  <rect x="70" y="130" width="160" height="20" fill="#EF9A9A" rx="3"/>
+  <text x="150" y="144" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#333">PyObject_HEAD: 16B</text>
+  <rect x="70" y="155" width="160" height="20" fill="#EF9A9A" rx="3"/>
+  <text x="150" y="169" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#333">__dict__指针: 8B →哈希表</text>
+  <rect x="70" y="180" width="160" height="55" fill="#FFEBEE" stroke="#D32F2F" stroke-dasharray="3,2" rx="3"/>
+  <text x="150" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#D32F2F">__dict__ 哈希表 ≈ 56B</text>
+  <text x="150" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#D32F2F">name→"Alice", age→30</text>
+  <text x="150" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#D32F2F">（动态扩容，开销大）</text>
+  <text x="150" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#D32F2F">80B/对象 × 100万 = 80MB</text>
+  <text x="150" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">属性访问: 35ns</text>
+
+  <rect x="310" y="60" width="240" height="250" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="8"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4CAF50">有 __slots__（固定槽位）</text>
+  <rect x="335" y="100" width="190" height="150" fill="#C8E6C9" stroke="#4CAF50" rx="4"/>
+  <text x="430" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">User对象</text>
+  <rect x="350" y="130" width="160" height="20" fill="#A5D6A7" rx="3"/>
+  <text x="430" y="144" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#333">PyObject_HEAD: 16B</text>
+  <rect x="350" y="155" width="75" height="20" fill="#81C784" rx="3"/>
+  <text x="387" y="169" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#333">name槽: 8B</text>
+  <rect x="435" y="155" width="75" height="20" fill="#81C784" rx="3"/>
+  <text x="472" y="169" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#333">age槽: 8B</text>
+  <rect x="350" y="180" width="160" height="55" fill="#E8F5E9" stroke="#4CAF50" stroke-dasharray="3,2" rx="3"/>
+  <text x="430" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#4CAF50">无 __dict__ →省56B</text>
+  <text x="430" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#4CAF50">固定槽位，不可加新属性</text>
+  <text x="430" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#4CAF50">（布局紧凑，缓存友好）</text>
+  <text x="430" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4CAF50">48B/对象 × 100万 = 48MB</text>
+  <text x="430" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">属性访问: 15ns (2x快)</text>
+</svg>

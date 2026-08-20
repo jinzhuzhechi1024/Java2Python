@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="400" fill="#FAFAFA" rx="8"/>
+  <text x="290" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#333">元对象模型：照片(Java) vs 3D打印机(Python)</text>
+
+  <rect x="30" y="60" width="250" height="310" fill="#FFF3E0" stroke="#E76F00" stroke-width="1.5" rx="8"/>
+  <text x="155" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#E76F00">Java Class（照片）</text>
+  <rect x="75" y="105" width="160" height="60" fill="#FFE0B2" stroke="#E76F00" rx="4"/>
+  <text x="155" y="125" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">Class&lt;User&gt;</text>
+  <text x="155" y="145" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">编译期生成，运行时只读</text>
+  <text x="155" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 可反射读取方法/字段</text>
+  <text x="155" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">❌ 不能运行时创建新类</text>
+  <text x="155" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">❌ 不能修改类结构</text>
+  <text x="155" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#D32F2F">❌ 不能添加新方法</text>
+  <text x="155" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像照片：拍好了只能看</text>
+  <text x="155" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">不能改，不能重拍</text>
+  <text x="155" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#E76F00">框架靠反射"偷看"照片</text>
+
+  <rect x="300" y="60" width="250" height="310" fill="#E3F2FD" stroke="#3776AB" stroke-width="1.5" rx="8"/>
+  <text x="425" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#3776AB">Python type（3D打印机）</text>
+  <rect x="345" y="105" width="160" height="60" fill="#BBDEFB" stroke="#3776AB" rx="4"/>
+  <text x="425" y="125" text-anchor="middle" font-family="monospace" font-size="10" fill="#0D47A1">type("MyClass", ...)</text>
+  <text x="425" y="145" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#666">运行时动态创建/修改</text>
+  <text x="425" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 可运行时创建新类</text>
+  <text x="425" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 可修改类结构</text>
+  <text x="425" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 可动态添加方法/属性</text>
+  <text x="425" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4CAF50">✅ 元类可定制创建过程</text>
+  <text x="425" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">像3D打印机：可打印新类</text>
+  <text x="425" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#666">甚至修改打印过程本身</text>
+  <text x="425" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#3776AB">框架靠元类"改造"创建过程</text>
+</svg>
